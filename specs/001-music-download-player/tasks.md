@@ -25,10 +25,10 @@ specification and constitution. If behavior changes, tests are NOT optional.
 
 **Purpose**: Project initialization and baseline tooling
 
-- [ ] T001 Scaffold the SvelteKit + Tauri mobile project structure in `src/`, `src-tauri/`, `android/`, and `tests/`
-- [ ] T002 Initialize frontend and Rust dependencies in `package.json`, `svelte.config.js`, `vite.config.ts`, `src-tauri/Cargo.toml`, and `src-tauri/tauri.conf.json`
-- [ ] T003 [P] Configure formatting and linting in `eslint.config.js`, `prettier.config.*`, `src-tauri/rustfmt.toml`, and `src-tauri/.clippy.toml`
-- [ ] T004 [P] Define automated quality checks in `.github/workflows/ci.yml` or equivalent project automation files
+- [X] T001 Scaffold the SvelteKit + Tauri mobile project structure in `src/`, `src-tauri/`, `android/`, and `tests/`
+- [X] T002 Initialize frontend and Rust dependencies in `package.json`, `svelte.config.js`, `vite.config.ts`, `src-tauri/Cargo.toml`, and `src-tauri/tauri.conf.json`
+- [X] T003 [P] Configure formatting and linting in `eslint.config.js`, `prettier.config.*`, `src-tauri/rustfmt.toml`, and `src-tauri/.clippy.toml`
+- [X] T004 [P] Define automated quality checks in `.github/workflows/ci.yml` or equivalent project automation files
 
 ---
 
@@ -38,14 +38,14 @@ specification and constitution. If behavior changes, tests are NOT optional.
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T005 Create SQLite schema and migration setup for library items, download jobs, destinations, playback queues, and user policy in `src-tauri/src/infrastructure/db/` and `src-tauri/migrations/`
-- [ ] T006 [P] Implement core domain models for `TrackCandidate`, `LibraryItem`, `DownloadJob`, `StorageDestination`, `PlaybackQueue`, and `UserPolicy` in `src-tauri/src/domain/`
-- [ ] T007 [P] Implement repository traits and SQLite-backed persistence adapters in `src-tauri/src/application/` and `src-tauri/src/infrastructure/db/`
-- [ ] T008 [P] Create the Tauri command registry and shared command result/error types in `src-tauri/src/commands/mod.rs`, `src-tauri/src/commands/types.rs`, and `src-tauri/src/lib.rs`
-- [ ] T009 [P] Implement the source adapter interfaces and policy-gated provider capability flags in `src-tauri/src/infrastructure/sources/mod.rs` and `src-tauri/src/application/source_service.rs`
-- [ ] T010 [P] Add Android bridge skeletons for WorkManager jobs, Media3 playback hooks, notifications, and storage access in `android/app/src/main/java/.../bridge/` and `android/app/src/main/java/.../work/`
-- [ ] T011 Create shared frontend domain types and Tauri invoke wrappers in `src/lib/types/`, `src/lib/api/commands.ts`, and `src/lib/stores/`
-- [ ] T012 Configure app-wide UX state patterns for loading, empty, error, retry, and backup-only indicators in `src/lib/components/` and `src/lib/stores/ui.ts`
+- [X] T005 Create SQLite schema and migration setup for library items, download jobs, destinations, playback queues, and user policy in `src-tauri/src/infrastructure/db/` and `src-tauri/migrations/`
+- [X] T006 [P] Implement core domain models for `TrackCandidate`, `LibraryItem`, `DownloadJob`, `StorageDestination`, `PlaybackQueue`, and `UserPolicy` in `src-tauri/src/domain/`
+- [X] T007 [P] Implement repository traits and SQLite-backed persistence adapters in `src-tauri/src/application/` and `src-tauri/src/infrastructure/db/`
+- [X] T008 [P] Create the Tauri command registry and shared command result/error types in `src-tauri/src/commands/mod.rs`, `src-tauri/src/commands/types.rs`, and `src-tauri/src/lib.rs`
+- [X] T009 [P] Implement the source adapter interfaces and policy-gated provider capability flags in `src-tauri/src/infrastructure/sources/mod.rs` and `src-tauri/src/application/source_service.rs`
+- [X] T010 [P] Add Android bridge skeletons for WorkManager jobs, Media3 playback hooks, notifications, and storage access in `android/app/src/main/java/.../bridge/` and `android/app/src/main/java/.../work/`
+- [X] T011 Create shared frontend domain types and Tauri invoke wrappers in `src/lib/types/`, `src/lib/api/commands.ts`, and `src/lib/stores/`
+- [X] T012 Configure app-wide UX state patterns for loading, empty, error, retry, and backup-only indicators in `src/lib/components/` and `src/lib/stores/ui.ts`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amplayer.app">
+
+    <application android:label="AM Player">
+        <service
+            android:name=".work.SaveWorker"
+            android:exported="false" />
+        <service
+            android:name=".work.DriveExportWorker"
+            android:exported="false" />
+    </application>
+</manifest>
