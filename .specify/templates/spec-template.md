@@ -95,6 +95,17 @@
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
 - **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
 
+### Quality & Experience Requirements *(mandatory)*
+
+- **QX-001**: The feature MUST define the automated tests and any required manual
+  validation needed to prove the changed behavior.
+- **QX-002**: The feature MUST describe the expected user-facing states and
+  interaction feedback when the change affects UI, copy, or workflows.
+- **QX-003**: The feature MUST preserve existing visual, interaction, and content
+  patterns unless a deliberate deviation is approved and documented.
+- **QX-004**: The feature MUST identify any accessibility, responsiveness, or
+  consistency constraints that affect acceptance.
+
 ### Key Entities *(include if feature involves data)*
 
 - **[Entity 1]**: [What it represents, key attributes without implementation]
@@ -126,3 +137,12 @@
 - [Assumption about scope boundaries, e.g., "Mobile support is out of scope for v1"]
 - [Assumption about data/environment, e.g., "Existing authentication system will be reused"]
 - [Dependency on existing system/service, e.g., "Requires access to the existing user profile API"]
+
+## Validation & Quality Gates *(mandatory)*
+
+- **Code Quality Checks**: [List linting, formatting, static analysis, or review
+  gates required for this feature]
+- **Test Coverage Plan**: [List required unit, integration, regression, and
+  manual validation coverage]
+- **UX Consistency Notes**: [Reference existing patterns, states, copy rules, and
+  accessibility expectations the feature must honor]

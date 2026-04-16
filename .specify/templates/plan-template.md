@@ -31,7 +31,17 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- **Code Quality Gate**: Identify the linting, formatting, static analysis, and
+  reviewability constraints that apply to this feature. Document any justified
+  exceptions in Complexity Tracking.
+- **Testing Gate**: List the unit, integration, regression, or manual validation
+  evidence required to prove the changed behavior. Plans that change behavior
+  without defined validation are invalid.
+- **UX Consistency Gate**: For user-facing work, describe the existing patterns,
+  states, and accessibility/responsiveness expectations the feature must follow.
+  For non-UI work, state why this gate is not applicable.
+- **Traceability Gate**: Confirm the work can be decomposed into reviewable tasks
+  with clear file ownership, dependencies, and acceptance checks.
 
 ## Project Structure
 
